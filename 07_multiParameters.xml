@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--Bir mthoda birden fazla parametre nasıl sağlanır-->
+<suite name="Suite">
+
+    <!--    Parameter-->
+    <test name="Test">
+        <!--        Parameter-->
+        <parameter name="isim" value="Nuro"></parameter>
+        <parameter name="soyIsim" value="Oz"></parameter>
+        <parameter name="yas" value="24"></parameter>
+        <classes>
+            <!--            Parameter-->
+            <class name="cw.tests.Day16.C01_Parameters">
+                <methods>
+                    <include name="twoParameterTest"/>
+            </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
